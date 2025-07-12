@@ -1,0 +1,134 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+}
+
+.searchBar {
+  height: 34px;
+  width: 22rem;
+  margin-right: 5px;
+  font-size: larger;
+  margin-right: 0;
+  outline: 0;
+  border-radius: 0;
+}
+
+.searchPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20px;
+}
+.searchBtn {
+  background: rgb(33, 33, 221);
+  height: 39px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+.searchIcon {
+  height: 25px;
+  outline: none;
+  stroke: white;
+}
+
+.searchIcon:hover {
+  opacity: 0.8;
+}
+
+.searchIcon:active,
+.searchBtn:active {
+  transform: scale(0.9);
+}
+
+.soundBtn {
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  left: 6px;
+  stroke: white;
+  top: 10px;
+}
+.sound-box {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 50px;
+}
+.soundBox {
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  margin-left: 5px;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.soundBox:active {
+  transform: scale(0.9);
+}
+.wordSearched {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.phonetics {
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.wordDetails {
+  display: flex;
+  margin: none;
+  position: absolute;
+  left: 60px;
+  top: 35px;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.partofspeech {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+  display: inline-block;
+  font-size: medium;
+}
+
+.wordClass {
+  position: absolute;
+  left: 100px;
+  padding-left: 10px;
+  top: 15px;
+  font-weight: bold;
+}
+
+.definition {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+.partOfSpeech,
+.Definition,
+.Example,
+.soundBox {
+  display: none;
+}
+
+.error {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  padding-top: 50px;
+}
