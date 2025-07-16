@@ -36,7 +36,6 @@ async function searchWord() {
     wordSearched.innerHTML = result.word;
     wordClass.innerHTML = result.meanings[0].partOfSpeech;
     audio.src = result.phonetics[0].audio;
-    console.log(results);
     if (result.phonetics[0].audio === "") {
       soundBtn.style.display = "none";
     } else {
