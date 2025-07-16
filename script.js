@@ -36,7 +36,9 @@ async function searchWord() {
     wordSearched.innerHTML = result.word;
     wordClass.innerHTML = result.meanings[0].partOfSpeech;
     audio.src = result.phonetics[0].audio;
-    if (audio.src === "http://127.0.0.1:5501/dictionary%20app/main.html") {
+    console.log(results);
+    if (result.phonetics[0].audio === "") {
+      console.log("send");
       soundBtn.style.display = "none";
     } else {
       soundBtn.style.display = "block";
