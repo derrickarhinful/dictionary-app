@@ -38,7 +38,6 @@ async function searchWord() {
     audio.src = result.phonetics[0].audio;
     console.log(results);
     if (result.phonetics[0].audio === "") {
-      console.log("send");
       soundBtn.style.display = "none";
     } else {
       soundBtn.style.display = "block";
